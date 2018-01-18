@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>cours1</title>
+		<script type="text/javascript" src="./csvSession2_IFA_Leo.json"></script>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body id="body" onload="afficherListe()">
+		<h1>Annuaire IFA</h1>
+		<div class="liste">
+			<ul id="listeContainer">
+			</ul>
+		</div>
+		<div id="detailWrap">
+			<h1 id="name"></h1>
+			<ul id="contentDesc">				
+			</ul>
+		</div>
+
+		<form id="form-id" action="#" >
+			<input type="text" name="Nom" placeholder="Nom">
+			<input type="text" name="Prenom" placeholder="Prénom">
+			<button id="boutonSup" value="supp" onClick="removeUser(); return false">Supprimer</button>
+			
+			<div id="ajoutInput"></div>
+			<div>
+				<input type="submit" value="Ajouter" id="boutonAdd" onClick="addUser(); return false"/>
+			</div>			
+		</form>
+
+		<script type="text/javascript" src="./app.js"></script>
+		<script type="text/javascript" src="./cours1_Leo.js"></script>
+	</body>
+</html>
